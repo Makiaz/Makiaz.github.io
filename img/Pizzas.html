@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/index3.html# -->
+<html lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzas</title>
+    <link rel="stylesheet" href="./Pizzas_files/style.css">
+</head>
+<body bgcolor="black">
+   <div class="head">
+    <div class="logo7">
+    <img id="logo7" src="./Pizzas_files/logo7.png">
+    </div>
+        <nav class="navbar">
+            <a href="http://127.0.0.1:5500/index3.html#">Inicio</a>
+            <a href="http://127.0.0.1:5500/index3.html#">Pizzas</a>
+            <a href="http://127.0.0.1:5500/index3.html#">Comenta</a>
+        </nav>
+   </div>
+   <br><br><br><br><br><br>
+   <div class="container">
+    <form action="http://127.0.0.1:5500/action_page.php">
+      <font color="#FFFFFF">
+     
+        <h1><i><b>DÉJENOS UN COMENTARIO</b></i></h1>
+        <br><br>
+      <label for="fname">Nombre</label>
+      <input type="text" id="fname" name="firstname" placeholder="Escribe aquí">
+ <br><br>
+      <label for="lname">Apellido</label>
+      <input type="text" id="lname" name="lastname" placeholder="Escribe aqui">
+      <br><br>
+      <label for="subject">Comentarios</label>
+      <br>
+      <textarea id="subject" name="subject" placeholder="Escribe aqui" style="height: 288px; width: 504px;"></textarea>
+      <br>
+      <input type="submit" value="Enviar">
+ 
+    
+  </font></form></div><font color="#FFFFFF">
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+    }
+    
+    
+    .footer {
+         text-align: center;
+         background: #e09a16;
+         padding-top: 20px;
+         padding-bottom: 10px;
+         text-shadow: 3px 4px 6px #000000;
+      }
+    
+    .footer-copyright {
+       font-size: 20px;
+       color:white;
+    }
+    
+    body{
+        text-align: center;
+        font-family: Cambria,bold italic;
+    }
+    
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 63px;
+        background: #e09a16;
+        text-shadow: 1px 2px 4px #000000;
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+    }
+    
+    .navbar {
+        display: flex;
+        margin-right: 10px;
+    }
+    
+    .logo7 {
+        width: 1100px;
+        max-width: 0%;
+        margin: 90 auto;
+      }
+      
+    #logo7 {
+        position: left;
+        width: 50px;
+        right: 40px;
+        padding-top: 5px;
+    }
+    
+    .navbar a {
+        display: block;
+        padding: 20px 20px;
+        color: #fff;
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+    
+    .navbar a:hover {
+        background: #000000;
+    }
+</style>    </font></body></html>

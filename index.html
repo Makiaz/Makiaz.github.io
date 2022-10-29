@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Inicio</title>
+</head>
+<body>
+   <div class="head">
+    <div class="logo7">
+        <a href="index.html"><img id="logo7" src="img/logo7.png"></a>
+    </div>
+        <nav class="navbar">
+            <a href="index.html">Inicio</a>
+            <a href="index2.html">Pizzas</a>
+            <a href="index3.html">Comenta</a>
+        </nav>
+   </div>
+<a href="index2.html" class="next">Pizzas</a>
+<a href="index.html" class="next">Inicio</a>
+<a href="index3.html" class="next">Comenta</a>
+
+   <header class="content header">
+       <h1 class="title">TU PIZZA FAVORITA</h1>
+   </header>
+
+<a href="index2.html" class="next">¡LAS PIZZAS QUE MÁS TE GUSTAN!</a>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<footer class="footer">
+    <p class="footer-copyright">
+      @Copyright 2021 - Todos los derechos reservados.
+    </p>
+
+  </footer>
+
+</body>
+</html>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+
+.footer {
+     text-align: center;
+     background: #e09a16;
+     padding-top: 20px;
+     padding-bottom: 10px;
+     text-shadow: 3px 4px 6px #000000;
+  }
+
+.footer-copyright {
+   font-size: 20px;
+   color:white;
+}
+
+html{
+    background: url(img/pizza.jpg)no-repeat;
+    background-size: cover;
+    height: 50rem;
+    overflow: auto;
+}
+
+body{
+    text-align: center;
+    font-family: Cambria,bold italic;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 63px;
+    background: #e09a16;
+    text-shadow: 1px 2px 4px #000000;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    margin-right: 10px;
+}
+
+.logo7 {
+    width: 1100px;
+    max-width: 0%;
+    margin: 0 auto;
+  }
+  
+#logo7 {
+    position: absolute;
+    width: 160px;
+    right: 40px;
+    padding-top: 60px;
+}
+
+.navbar a {
+    display: block;
+    padding: 20px 20px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.navbar a:hover {
+    background: #000000;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    font-family: monospace;
+    color: black;
+}
+
+.next {
+    font-size: 20px;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 60px;
+    font-family: monospace;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid black;
+    background: rgb(156, 56, 56);
+    box-shadow: 0 .3rem 5rem rgba(0, 0 , 0, .5);
+    text-shadow: 1px 2px 2px #000000;
+}
+
+.next:hover {
+    background: rgb(92, 29, 29);;
+    
+}
+
+.title {
+    margin-bottom: 40px;
+    font-size: 80px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    text-shadow: 3px 4px 6px #000000;
+}
+
+p {
+    margin-bottom: 15px;
+    font-size: 28px;
+    color: black;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 40px;
+    border: 2px solid #D8B61F;
+    color: #fff;
+    text-decoration: none;
+    background: #D8B61F;
+}
+
+.btn:hover {
+    background: none;
+}
+
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sau {
+    padding: 50px 0;
+    background: #303030;
+}
+</style>
